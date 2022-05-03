@@ -1,0 +1,57 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Online_Information_System.master.cs" Inherits="Online_Information_System.Online_Information_System" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        .auto-style2 {
+            width: 105%;
+            height: 456px;
+        }
+        .auto-style3 {
+            width: 33px;
+            background-color: #66CCFF;
+        }
+        .auto-style4 {
+            width: 33px;
+            height: 106px;
+        }
+        .auto-style5 {
+            height: 106px;
+        }
+        .auto-style6 {
+            width: 118px;
+            height: 130px;
+        }
+    </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <table class="auto-style2">
+            <tr>
+                <td class="auto-style4">
+                    <img class="auto-style6" src="images/ois.jpeg" /></td>
+                <td class="auto-style5" style="background-color: #00FFFF">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <asp:Label ID="Label1" runat="server" BackColor="#66FFFF" ForeColor="Red" Text="ONLINE INFORMATION SYSTEM"></asp:Label>
+                </td>
+            </tr>
+            <tr>
+                <td class="auto-style3" style="background-color: #00FF00">
+                    <asp:LinkButton ID="LinkButton1" runat="server">Registration</asp:LinkButton>
+                    <br />
+                    <br />
+                    <asp:LinkButton ID="LinkButton2" runat="server">Login</asp:LinkButton>
+                </td>
+                <td style="background-color: #FFFFFF; background-image: url('/images/college.jpeg'); background-repeat: no-repeat; background-attachment: fixed; background-position: center center">
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+                </td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>
